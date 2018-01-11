@@ -5,6 +5,14 @@ private int id;
 private String nombre;
 private String creado;
 private String actualizado; 
+
+    public roles(int id, String nombre, String creado, String actualizado) {
+        this.id = id;
+        this.nombre = nombre;
+        this.creado = creado;
+        this.actualizado = actualizado;
+    }
+
     public roles() {
     }
 
