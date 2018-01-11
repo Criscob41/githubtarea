@@ -1,14 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package unach.trabajogrupal3.entidades;
 
-/**
- *
- * @author Usuario
- */
 public class roles {
+private int id;
+private String nombre;
+private String creado;
+private String actualizado; 
+    public roles() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCreado() {
+        return creado;
+    }
+
+    public void setCreado(String creado) {
+        this.creado = creado;
+    }
+
+    public String getActualizado() {
+        return actualizado;
+    }
+
+    public void setActualizado(String actualizado) {
+        this.actualizado = actualizado;
+    }
     
 }
