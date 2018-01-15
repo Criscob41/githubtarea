@@ -5,7 +5,7 @@
  */
 package unach.trabajogrupal3.entidades;
 
-import unach.trabajo3.entidades.*;
+
 
 /**
  *
@@ -20,11 +20,14 @@ public class publicaciones {
     private String publicado;
     private int vistas;
     private int votos;
+    private String creado;
+    private String actualizado;
 
     public publicaciones() {
-    }
+        
+    }       
 
-    public publicaciones(int id, int usuario_id, int nivel_id, String titulo, String contenido, String publicado, int vistas, int votos) {
+    public publicaciones(int id, int usuario_id, int nivel_id, String titulo, String contenido, String publicado, int vistas, int votos, String creado, String actualizado) {
         this.id = id;
         this.usuario_id = usuario_id;
         this.nivel_id = nivel_id;
@@ -33,6 +36,8 @@ public class publicaciones {
         this.publicado = publicado;
         this.vistas = vistas;
         this.votos = votos;
+        this.creado = creado;
+        this.actualizado = actualizado;
     }
 
     public int getId() {
@@ -98,6 +103,20 @@ public class publicaciones {
     public void setVotos(int votos) {
         this.votos = votos;
     }
-    
-            
+
+    public String getCreado() {
+        return creado;
+    }
+
+    public void setCreado(String creado) {
+        this.creado = creado;
+    }
+
+    public String getActualizado() {
+        return actualizado;
+    }
+
+    public void setActualizado(String actualizado) {
+        this.actualizado = actualizado;
+    }
 }

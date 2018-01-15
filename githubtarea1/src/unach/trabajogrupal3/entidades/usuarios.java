@@ -15,16 +15,21 @@ public class usuarios {
     private String email;
     private String pasword;
     private int rol_id;
+    private String creado;
+    private String actualizado;
 
     public usuarios() {
+    
     }
 
-    public usuarios(int id, String nombre, String email, String pasword, int rol_id) {
+    public usuarios(int id, String nombre, String email, String pasword, int rol_id, String creado, String actualizado) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
         this.pasword = pasword;
         this.rol_id = rol_id;
+        this.creado = creado;
+        this.actualizado = actualizado;
     }
 
     public int getId() {
@@ -66,5 +71,20 @@ public class usuarios {
     public void setRol_id(int rol_id) {
         this.rol_id = rol_id;
     }
-    
+
+    public String getCreado() {
+        return creado;
+    }
+
+    public void setCreado(String creado) {
+        this.creado = creado;
+    }
+
+    public String getActualizado() {
+        return actualizado;
+    }
+
+    public void setActualizado(String actualizado) {
+        this.actualizado = actualizado;
+    }
 }
