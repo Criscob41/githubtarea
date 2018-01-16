@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package unach.trabajogrupal3.rnegocio.impl;
+package unach.trabajogrupal3.rnegocio.test;
 
 /**
  *
- * @author Usuario
+ * @author PC
  */
-public class UsuariosImpl {
+public class publicacionesTest {
     
 }
