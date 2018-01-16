@@ -2,7 +2,7 @@ package taller.Test;
 import java.util.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
-import progra_taller.rnegocio.Impl.Etiqueta_publicacionImpl;
+import progra_taller.rnegocio.Impl.*;
 import progra_taller.rnegocio.dao.*;
 import progra_taller.rnegocio.entidades.*;
 import progra_taller.rnegocio.Impl.*;
@@ -14,7 +14,7 @@ public class Etiqueta_publicacionTest {
     public void pruebageneral() throws Exception{
         //              INSERTAR
         int filasAfectadas =0;
-        IEtiqueta_publicacion etiqueta_publicacionDao = new Etiqueta_publicacionImpl();
+        IEtiqueta_publicacion etiqueta_publicacionDao = new Etiqueta_PublicacionImpl();
         IEtiqueta etiquetaDao = new EtiquetaImpl();
         Etiqueta etiqueta = etiquetaDao.obtener(1);
         IPublicacion publicacionDao = new PublicacionImpl();
