@@ -14,7 +14,7 @@ public class NivelTest {
         //              INSERTAR
         int filasAfectadas =0;
         INivel nivelDao = new NivelImpl();
-        Nivel nivel = new Nivel(4,"jnijk",new Date(),new Date());
+        Nivel nivel = new Nivel(5,"jnijk",new Date(),new Date());
         try{
             filasAfectadas = nivelDao.insertar(nivel);
             System.out.println("Nivel ingresado!!!\n");

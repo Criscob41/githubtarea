@@ -14,7 +14,7 @@ public class RolTest {
         //              INSERTAR
         int filasAfectadas =0;
         IRol rolDao = new RolImpl();
-        Rol rol = new Rol(2,"Administrador2",new Date(),new Date());
+        Rol rol = new Rol(5,"Administrador2",new Date(),new Date());
         try{
             filasAfectadas = rolDao.insertar(rol);
             System.out.println("Rol ingresado!!!\n");

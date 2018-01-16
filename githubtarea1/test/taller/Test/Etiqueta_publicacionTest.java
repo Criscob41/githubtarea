@@ -16,10 +16,10 @@ public class Etiqueta_publicacionTest {
         int filasAfectadas =0;
         IEtiqueta_publicacion etiqueta_publicacionDao = new Etiqueta_PublicacionImpl();
         IEtiqueta etiquetaDao = new EtiquetaImpl();
-        Etiqueta etiqueta = etiquetaDao.obtener(1);
+        Etiqueta etiqueta = etiquetaDao.obtener(5);
         IPublicacion publicacionDao = new PublicacionImpl();
-        Publicacion publicacion = publicacionDao.obtener(1);
-        Etiqueta_publicacion etiqueta_publicacion = new Etiqueta_publicacion(1,etiqueta,publicacion,new Date(),new Date());
+        Publicacion publicacion = publicacionDao.obtener(5);
+        Etiqueta_publicacion etiqueta_publicacion = new Etiqueta_publicacion(5,etiqueta,publicacion,new Date(),new Date());
         
         try{
             filasAfectadas = etiqueta_publicacionDao.insertar(etiqueta_publicacion);

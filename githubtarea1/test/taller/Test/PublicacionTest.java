@@ -15,10 +15,10 @@ public class PublicacionTest {
         int filasAfectadas =0;
         IPublicacion publicacionDao = new PublicacionImpl();
         IUsuario usuarioDao = new UsuarioImpl();
-        Usuario usuario = usuarioDao.obtener(1);
+        Usuario usuario = usuarioDao.obtener(5);
         INivel nivelDao = new NivelImpl();
-        Nivel nivel = nivelDao.obtener(1);
-        Publicacion publicacion = new Publicacion(2,usuario,nivel,"titulo2","contenido2",1,1,12.34,new Date(),new Date());
+        Nivel nivel = nivelDao.obtener(5);
+        Publicacion publicacion = new Publicacion(5,usuario,nivel,"titulo2","contenido2",1,1,12.34,new Date(),new Date());
         
         try{
             filasAfectadas = publicacionDao.insertar(publicacion);

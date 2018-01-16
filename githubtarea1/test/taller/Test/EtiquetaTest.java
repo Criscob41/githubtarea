@@ -14,7 +14,7 @@ public class EtiquetaTest {
         //              INSERTAR
         int filasAfectadas =0;
         IEtiqueta etiquetaDao = new EtiquetaImpl();
-        Etiqueta etiqueta = new Etiqueta(3,"Etiqueta3",new Date(),new Date());
+        Etiqueta etiqueta = new Etiqueta(5,"Etiqueta3",new Date(),new Date());
         try{
             filasAfectadas = etiquetaDao.insertar(etiqueta);
             System.out.println("Etiqueta ingresado!!!\n");
