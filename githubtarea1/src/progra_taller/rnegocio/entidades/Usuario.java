@@ -1,44 +1,36 @@
+package progra_taller.rnegocio.entidades;
 
-package unach.trabajogrupal3.rnegocio.entidades;
-import java.util.*;
+import java.util.Date;
 
-public class Usuarios {
-    private Roles roles;
-    private int id;
+public class Usuario {
+
+    private int idusuario;
     private String nombre;
     private String email;
-    private String pasword;
+    private String password;
     private Date creado;
     private Date actualizado;
+    private Rol rol;
 
-    public Usuarios() {
-    
+    public Usuario() {
     }
 
-    public Usuarios(Roles roles, int id, String nombre, String email, String pasword, Date creado, Date actualizado) {
-        this.roles = roles;
-        this.id = id;
+    public Usuario(int idusuario, String nombre, String email, String password, Date creado, Date actualizado, Rol rol) {
+        this.idusuario = idusuario;
         this.nombre = nombre;
         this.email = email;
-        this.pasword = pasword;
+        this.password = password;
         this.creado = creado;
         this.actualizado = actualizado;
+        this.rol = rol;
     }
 
-    public Roles getRoles() {
-        return roles;
+    public int getIdusuario() {
+        return idusuario;
     }
 
-    public void setRoles(Roles roles) {
-        this.roles = roles;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setIdusuario(int idusuario) {
+        this.idusuario = idusuario;
     }
 
     public String getNombre() {
@@ -57,12 +49,12 @@ public class Usuarios {
         this.email = email;
     }
 
-    public String getPasword() {
-        return pasword;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPasword(String pasword) {
-        this.pasword = pasword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Date getCreado() {
@@ -81,5 +73,14 @@ public class Usuarios {
         this.actualizado = actualizado;
     }
 
+    public Rol getRol() {
+        return rol;
+    }
 
+    public void setRol(Rol rol) {
+        this.rol = rol;
+    }
+    
+
+    
 }

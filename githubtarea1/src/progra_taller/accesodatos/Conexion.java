@@ -1,5 +1,4 @@
-
-package unach.trabajogrupal3.rnegocio.accesodatos;
+package progra_taller.accesodatos;
 
 import java.sql.*;
 import java.util.List;
@@ -10,8 +9,8 @@ public class Conexion {
 
     public void conectar() {
         try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            con = DriverManager.getConnection("jdbc:sqlserver://172.30.3.163:1433;databaseName=Base2","Base2", "123");
+            Class.forName("org.postgresql.Driver");
+            con = DriverManager.getConnection("jdbc:postgresql://localhost:5433/Progra_taller","usr_progra_taller", "1234");
         } catch (ClassNotFoundException e) {
             System.out.println("Error al cargar el driver: "
                     + e.getMessage());

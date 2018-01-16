@@ -1,30 +1,28 @@
+package progra_taller.rnegocio.entidades;
+import java.util.Date;
+public class Rol {
+  
+     private int idrol; 
+     private String nombre;
+     private Date creado;
+     private Date actualizado;
 
-package unach.trabajogrupal3.rnegocio.entidades;
-import java.util.*;
-
-public class Niveles {
-    private int id;
-    private String nombre;
-    private Date creado;
-    private Date actualizado;
-
-    public Niveles() {
-    
+    public Rol() {
     }
 
-    public Niveles(int id, String nombre, Date creado, Date actualizado) {
-        this.id = id;
+    public Rol(int idrol, String nombre, Date creado, Date actualizado) {
+        this.idrol = idrol;
         this.nombre = nombre;
         this.creado = creado;
         this.actualizado = actualizado;
     }
 
-    public int getId() {
-        return id;
+    public int getIdrol() {
+        return idrol;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdrol(int idrol) {
+        this.idrol = idrol;
     }
 
     public String getNombre() {
@@ -50,7 +48,9 @@ public class Niveles {
     public void setActualizado(Date actualizado) {
         this.actualizado = actualizado;
     }
-    
 
-    
+     
+     
+     
+     
 }

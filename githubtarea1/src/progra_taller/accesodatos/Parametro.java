@@ -1,5 +1,6 @@
 
-package unach.trabajogrupal3.rnegocio.accesodatos;
+package progra_taller.accesodatos;
+
 
 public class Parametro {
     private int posicion;

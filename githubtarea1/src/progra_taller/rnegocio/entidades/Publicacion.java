@@ -1,29 +1,24 @@
-
-package unach.trabajogrupal3.rnegocio.entidades;
-import java.util.*;
-
-
-
-public class Publicaciones {
-    private Niveles niveles;
-    private Usuarios usuarios;
-    private int id;
+package progra_taller.rnegocio.entidades;
+import java.util.Date;
+public class Publicacion {
+    private int idpublicacion;
+    private Usuario usuario;
+    private Nivel nivel;
     private String titulo;
     private String contenido;
     private int publicado;
     private int vistas;
-    private double votos;
+    private Double votos;
     private Date creado;
     private Date actualizado;
 
-    public Publicaciones() {
-        
-    }       
+    public Publicacion() {
+    }
 
-    public Publicaciones(Niveles niveles, Usuarios usuarios, int id, String titulo, String contenido, int publicado, int vistas, double votos, Date creado, Date actualizado) {
-        this.niveles = niveles;
-        this.usuarios = usuarios;
-        this.id = id;
+    public Publicacion(int idpublicacion, Usuario usuario, Nivel nivel, String titulo, String contenido, int publicado, int vistas, Double votos, Date creado, Date actualizado) {
+        this.idpublicacion = idpublicacion;
+        this.usuario = usuario;
+        this.nivel = nivel;
         this.titulo = titulo;
         this.contenido = contenido;
         this.publicado = publicado;
@@ -33,28 +28,28 @@ public class Publicaciones {
         this.actualizado = actualizado;
     }
 
-    public Niveles getNiveles() {
-        return niveles;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setNiveles(Niveles niveles) {
-        this.niveles = niveles;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
-    public Usuarios getUsuarios() {
-        return usuarios;
+    public Nivel getNivel() {
+        return nivel;
     }
 
-    public void setUsuarios(Usuarios usuarios) {
-        this.usuarios = usuarios;
+    public void setNivel(Nivel nivel) {
+        this.nivel = nivel;
     }
 
-    public int getId() {
-        return id;
+    public int getIdpublicacion() {
+        return idpublicacion;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdpublicacion(int idpublicacion) {
+        this.idpublicacion = idpublicacion;
     }
 
     public String getTitulo() {
@@ -89,11 +84,11 @@ public class Publicaciones {
         this.vistas = vistas;
     }
 
-    public double getVotos() {
+    public Double getVotos() {
         return votos;
     }
 
-    public void setVotos(double votos) {
+    public void setVotos(Double votos) {
         this.votos = votos;
     }
 
@@ -113,4 +108,5 @@ public class Publicaciones {
         this.actualizado = actualizado;
     }
 
+    
 }

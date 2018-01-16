@@ -1,28 +1,27 @@
-package unach.trabajogrupal3.rnegocio.entidades;
-import java.util.*;
+package progra_taller.rnegocio.entidades;
+import java.util.Date;
+public class Etiqueta {
+    private int idetiqueta;
+    private String nombre;
+    private Date creado;
+    private Date actualizado;
 
-public class Roles {
-private int id;
-private String nombre;
-private Date creado;
-private Date actualizado; 
-
-public Roles() {
+    public Etiqueta() {
     }
 
-    public Roles(int id, String nombre, Date creado, Date actualizado) {
-        this.id = id;
+    public Etiqueta(int idetiqueta, String nombre, Date creado, Date actualizado) {
+        this.idetiqueta = idetiqueta;
         this.nombre = nombre;
         this.creado = creado;
         this.actualizado = actualizado;
     }
 
-    public int getId() {
-        return id;
+    public int getIdetiqueta() {
+        return idetiqueta;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdetiqueta(int idetiqueta) {
+        this.idetiqueta = idetiqueta;
     }
 
     public String getNombre() {
@@ -49,6 +48,6 @@ public Roles() {
         this.actualizado = actualizado;
     }
 
-   
+    
     
 }
