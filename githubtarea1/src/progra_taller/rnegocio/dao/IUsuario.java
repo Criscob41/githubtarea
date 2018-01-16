@@ -7,6 +7,7 @@ public interface IUsuario {
     
      public int insertar(Usuario usuario) throws Exception;
      public List<Usuario> obtener() throws Exception;
+     
      public Usuario obtener(int codigo) throws Exception;   
      
      
