@@ -14,7 +14,7 @@ public class Etiqueta_publicacionTest {
     public void pruebageneral() throws Exception{
         //              INSERTAR
         int filasAfectadas =0;
-        IEtiqueta_publicacion etiqueta_publicacionDao = new Etiqueta_publicacionImpl();
+        IEtiqueta_publicacion etiqueta_publicacionDao = new Etiqueta_PublicacionImpl();
         IEtiqueta etiquetaDao = new EtiquetaImpl();
         Etiqueta etiqueta = etiquetaDao.obtener(1);
         IPublicacion publicacionDao = new PublicacionImpl();

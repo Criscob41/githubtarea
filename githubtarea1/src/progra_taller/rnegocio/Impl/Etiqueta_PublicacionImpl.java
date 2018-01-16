@@ -11,7 +11,7 @@ import progra_taller.rnegocio.entidades.*;
 
 
 
-public class Etiqueta_publicacionImpl implements IEtiqueta_publicacion{
+public class Etiqueta_PublicacionImpl implements IEtiqueta_publicacion{
      @Override
     public int insertar(Etiqueta_publicacion etiqueta_publicacion) throws Exception{
         int numFilasAfectadas=0;
