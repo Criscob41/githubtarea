@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package githubtarea1;
+package unach.trabajogrupal3.rnegocio.impl;
 
 /**
  *
  * @author Usuario
  */
-public class Githubtarea1 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class PublicacionesImpl {
     
 }

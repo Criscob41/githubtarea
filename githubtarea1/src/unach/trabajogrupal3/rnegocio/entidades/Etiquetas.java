@@ -1,16 +1,19 @@
+package unach.trabajogrupal3.rnegocio.entidades;
 
-package unach.trabajogrupal3.entidades;
-public class etiquetas {
-private int id;
-private String nombre;
-private String creado;
-private String actualizado; 
+import java.util.*;
 
-public etiquetas() {
-    
+public class Etiquetas {
+
+    private int id;
+    private String nombre;
+    private Date creado;
+    private Date actualizado;
+
+    public Etiquetas() {
+
     }
 
-    public etiquetas(int id, String nombre, String creado, String actualizado) {
+    public Etiquetas(int id, String nombre, Date creado, Date actualizado) {
         this.id = id;
         this.nombre = nombre;
         this.creado = creado;
@@ -33,19 +36,20 @@ public etiquetas() {
         this.nombre = nombre;
     }
 
-    public String getCreado() {
+    public Date getCreado() {
         return creado;
     }
 
-    public void setCreado(String creado) {
+    public void setCreado(Date creado) {
         this.creado = creado;
     }
 
-    public String getActualizado() {
+    public Date getActualizado() {
         return actualizado;
     }
 
-    public void setActualizado(String actualizado) {
+    public void setActualizado(Date actualizado) {
         this.actualizado = actualizado;
     }
+    
 }

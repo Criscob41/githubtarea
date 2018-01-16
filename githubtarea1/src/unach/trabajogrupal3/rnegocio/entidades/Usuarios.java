@@ -1,35 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package unach.trabajogrupal3.entidades;
 
-/**
- *
- * @author Usuario
- */
-public class usuarios {
+package unach.trabajogrupal3.rnegocio.entidades;
+import java.util.*;
+
+public class Usuarios {
+    private Roles roles;
     private int id;
     private String nombre;
     private String email;
     private String pasword;
-    private int rol_id;
-    private String creado;
-    private String actualizado;
+    private Date creado;
+    private Date actualizado;
 
-    public usuarios() {
+    public Usuarios() {
     
     }
 
-    public usuarios(int id, String nombre, String email, String pasword, int rol_id, String creado, String actualizado) {
+    public Usuarios(Roles roles, int id, String nombre, String email, String pasword, Date creado, Date actualizado) {
+        this.roles = roles;
         this.id = id;
         this.nombre = nombre;
         this.email = email;
         this.pasword = pasword;
-        this.rol_id = rol_id;
         this.creado = creado;
         this.actualizado = actualizado;
+    }
+
+    public Roles getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Roles roles) {
+        this.roles = roles;
     }
 
     public int getId() {
@@ -64,27 +65,21 @@ public class usuarios {
         this.pasword = pasword;
     }
 
-    public int getRol_id() {
-        return rol_id;
-    }
-
-    public void setRol_id(int rol_id) {
-        this.rol_id = rol_id;
-    }
-
-    public String getCreado() {
+    public Date getCreado() {
         return creado;
     }
 
-    public void setCreado(String creado) {
+    public void setCreado(Date creado) {
         this.creado = creado;
     }
 
-    public String getActualizado() {
+    public Date getActualizado() {
         return actualizado;
     }
 
-    public void setActualizado(String actualizado) {
+    public void setActualizado(Date actualizado) {
         this.actualizado = actualizado;
     }
+
+
 }

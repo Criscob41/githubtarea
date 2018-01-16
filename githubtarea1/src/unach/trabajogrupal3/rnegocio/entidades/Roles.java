@@ -1,18 +1,16 @@
+package unach.trabajogrupal3.rnegocio.entidades;
+import java.util.*;
 
-package unach.trabajogrupal3.entidades;
+public class Roles {
+private int id;
+private String nombre;
+private Date creado;
+private Date actualizado; 
 
-
-public class niveles {
-    private int id;
-    private String nombre;
-    private String creado;
-    private String actualizado;
-
-    public niveles() {
-    
+public Roles() {
     }
 
-    public niveles(int id, String nombre, String creado, String actualizado) {
+    public Roles(int id, String nombre, Date creado, Date actualizado) {
         this.id = id;
         this.nombre = nombre;
         this.creado = creado;
@@ -35,19 +33,22 @@ public class niveles {
         this.nombre = nombre;
     }
 
-    public String getCreado() {
+    public Date getCreado() {
         return creado;
     }
 
-    public void setCreado(String creado) {
+    public void setCreado(Date creado) {
         this.creado = creado;
     }
 
-    public String getActualizado() {
+    public Date getActualizado() {
         return actualizado;
     }
 
-    public void setActualizado(String actualizado) {
+    public void setActualizado(Date actualizado) {
         this.actualizado = actualizado;
     }
+
+   
+    
 }
